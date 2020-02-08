@@ -1,310 +1,788 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Adarsh Sivadas</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robot" content = "all">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <style>
-        body {
-            font: 400 15px/1.8 Lato, sans-serif;
-            color: #777;
-        }
-        .typewriter h1 {
-            font: 80px DejaVu Sans Mono;
-            color: WHITE;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-            border-right: .15em solid orange; /* The typwriter cursor */
-            white-space: nowrap; /* Keeps the content on a single line */
-            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-            animation:
-                    typing 2.5s steps(40, end),
-                    blink-caret .75s step-end infinite;
-        }
 
-        /* The typing effect */
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-        /* The typewriter cursor effect */
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: orange; }
-        }
-        h2{
-            font-size: 35px;
-            color: BLACK;
-        }
-        h3, h4{
-            font-size: 35px;
-            color: white;
-        }
-        h5{
-            font-size: 35px;
-            color: WHITE;
-        }
-        .container {
-            padding: 60px 100px;
-        }
-        .hero-image {
-            background-image: url("images/cover.png");
+  <title>Adarsh Sivadas</title>
 
-        }
-        .hero-text {
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-        }
-        .carousel-inner img {
-            /*-webkit-filter: grayscale(90%);*/
-            /*filter: grayscale(90%); !* make all photos black and white *!*/
-            width: 100%; /* Set width to 100% */
-            margin: auto;
-        }
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        .carousel-caption h3 {
-            color: #fff !important;
-        }
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+  <link href="css-circular-prog-bar.css" rel="stylesheet">
 
 
-        .bg-1 {
-            background: #2d2d30;
-            color: #bdbdbd;
-        }
-        .bg-1 h3 {color: #fff;}
-        .bg-1 p {font-style: italic;}
-
-        .thumbnail p {
-            margin-top: 15px;
-            color: #555;
-        }
-        .nav-tabs li a {
-            color: #777;
-        }
-        .navbar {
-            font-family: Montserrat, sans-serif;
-            margin-bottom: 0;
-            background-color: #2d2d30;
-            border: 0;
-            font-size: 11px !important;
-            letter-spacing: 4px;
-            opacity: 0.9;
-        }
-        a:link {
-            color: #f5f5f5;
-        }
-
-        a:visited {
-            color: #f5f5f5;
-        }
-
-        a:hover {
-            color: #f5f5f5;
-        }
-
-        a:active {
-            color: #f5f5f5;
-        }
-        .navbar li a, .navbar .navbar-brand {
-            color: #d5d5d5 !important;
-        }
-        .navbar-nav li a:hover {
-            color: #fff !important;
-        }
-        .navbar-nav li.active a {
-            color: #fff !important;
-            background-color: #29292c !important;
-        }
-        .navbar-default .navbar-toggle {
-            border-color: transparent;
-        }
-        footer {
-            background-color: #2d2d30;
-            color: #f5f5f5;
-            padding: 32px;
-        }
-        footer a {
-            color: #f5f5f5;
-        }
-        footer a:hover {
-            color: #777;
-            text-decoration: none;
-        }
-        textarea {
-            resize: none;
-        }
-    </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#myPage">Adarsh Sivadas</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#myPage">WELCOME</a></li>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#connect">CONNECT</a></li>
-                <li><a href="#videos">VIDEOS</a></li>
-            </ul>
-        </div>
-    </div>
+<!-- Connect section CSS !-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Animated </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+
+  <style>
+    div#soc ul{
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      padding: 0;
+      display: inline-table;
+
+
+    }
+    div#soc ul li{
+      list-style: none;
+      margin: 0 40px;
+      display: inline-table;
+
+    }
+    div#soc ul li .fa{
+      font-size: 40px;
+      color: #262626;
+      line-height: 80px;
+      transition: .5s;
+
+    }
+    div#soc ul li a{
+      position: relative;
+      display: block;
+      width: 80px;
+      height: 80px;
+      background-color: #f0f0f0;
+      text-align: center;
+      transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0,0);
+      transition: .5s;
+      box-shadow: -20px 20px 10px rgb(0, 0, 0,0.5);
+    }
+
+    div#soc ul li a::before{
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      height: 100%;
+      width: 20px;
+      background: #b1b1b1;
+      transition: .5s;
+      transform: rotate(0deg) skewY(-45deg);
+    }
+    div#soc ul li a::after{
+      content: "";
+      position: absolute;
+      top: 80px;
+      left: -11px;
+      height: 20px;
+      width: 100%;
+      background: #b1b1b1;
+      transition: .5s;
+      transform: rotate(0deg) skewX(-45deg);
+    }
+    div#soc ul li a:hover{
+      transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+      box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+    }
+    div#soc ul li:hover .fa{
+      color: #fff;
+    }
+    div#soc ul li a:hover{
+      transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+      box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+    }
+    div#soc ul li:hover:nth-child(1) a{
+      background: #3b5999;
+    }
+
+    div#soc ul li:hover:nth-child(1) a:before{
+      background: #2e4a86;
+    }
+    div#soc ul li:hover:nth-child(1) a:after{
+      background: #4a69ad;
+    }
+    div#soc ul li:hover:nth-child(2) a{
+      background: #55acee;
+    }
+    div#soc ul li:hover:nth-child(2) a:before{
+      background: #4184b7;
+    }
+    div#soc ul li:hover:nth-child(2) a:after{
+      background: #4d9fde;
+    }
+    div#soc ul li:hover:nth-child(2) a{
+      background: #dd4b39;
+    }
+
+    div#soc ul li:hover:nth-child(2) a:before{
+      background: #c13929;
+    }
+    div#soc ul li:hover:nth-child(2) a:after{
+      background: #e83322;
+    }
+
+    div#soc ul li:hover#linkedin a{
+      background: #0077B5;
+    }
+
+    div#soc ul li:hover#linkedin a:before{
+      background: #036aa0;
+    }
+    div#soc ul li:hover#linkedin a:after{
+      background: #0d82bf;
+    }
+
+    div#soc ul li:hover#insta a{
+      background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+    }
+
+    div#soc ul li:hover#insta a:before{
+      background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+    }
+    div#soc ul li:hover#insta a:after{
+      background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+    }
+  </style>
+</head>
+
+<head>
+  <style>
+    .progress-title{
+      font-size: 16px;
+      font-weight: 700;
+      color: #333;
+      margin: 0 0 20px;
+    }
+    .progress{
+      height: 10px;
+      background: #333;
+      border-radius: 0;
+      box-shadow: none;
+      margin-bottom: 30px;
+      overflow: visible;
+    }
+    .progress .progress-bar{
+      position: relative;
+      -webkit-animation: animate-positive 2s;
+      animation: animate-positive 2s;
+    }
+    .progress .progress-bar:after{
+      content: "";
+      display: inline-block;
+      width: 9px;
+      background: #fff;
+      position: absolute;
+      top: -10px;
+      bottom: -10px;
+      right: -1px;
+      z-index: 1;
+      transform: rotate(35deg);
+    }
+    .progress .progress-value{
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      position: absolute;
+      top: -30px;
+      right: -25px;
+    }
+    @-webkit-keyframes animate-positive{
+      0%{ width: 0; }
+    }
+    @keyframes animate-positive {
+      0%{ width: 0; }
+    }
+  </style>
+
+  <script>
+  </script>
+
+</head>
+
+
+<head>
+  <style>
+
+    .rect-auto, .c100.p95 .slice, .c100.p100 .slice {
+      clip: rect(auto, auto, auto, auto);
+    }
+
+    .pie, .c100 .bar, .c100.p95 .fill, .c100.p100 .fill {
+      position: absolute;
+      border: 0.09em solid #000000;
+      width: 0.82em;
+      height: 0.82em;
+      clip: rect(0em, 0.5em, 1em, 0em);
+      border-radius: 50%;
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    .c100.p95 .bar:after, .c100.p95 .fill, .c100.p100 .bar:after, .c100.p100 .fill {
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+
+    .wrapper {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    .c100 {
+      position: relative;
+      font-size: 160px;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      float: left;
+      background-color: #dfe8ed;
+    }
+    .c100 *, .c100 *:before, .c100 *:after {
+      -moz-box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+    .c100 > span {
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 5em;
+      line-height: 5em;
+      font-size: 0.2em;
+      color: #3c4761;
+      display: block;
+      text-align: center;
+      white-space: nowrap;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -moz-transition-timing-function: ease-out;
+      -o-transition-timing-function: ease-out;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    .c100:after {
+      position: absolute;
+      top: 0.09em;
+      left: 0.09em;
+      display: block;
+      content: " ";
+      border-radius: 50%;
+      background-color: #ffffff;
+      width: 0.82em;
+      height: 0.82em;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      -webkit-transition-timing-function: ease-in;
+      transition-timing-function: ease-in;
+    }
+    .c100 .slice {
+      position: absolute;
+      width: 1em;
+      height: 1em;
+      clip: rect(0em, 1em, 1em, 0.5em);
+    }
+    .c100.p95 .bar {
+      -moz-transform: rotate(342deg);
+      -ms-transform: rotate(342deg);
+      -webkit-transform: rotate(342deg);
+      transform: rotate(342deg);
+    }
+    .c100.p100 .bar {
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+    .c100:hover {
+      cursor: default;
+    }
+    .c100:hover > span {
+      width: 3.33em;
+      line-height: 3.33em;
+      font-size: 0.3em;
+      color: #3c4761;
+    }
+    .c100:hover:after {
+      top: 0.07em;
+      left: 0.07em;
+      width: 0.86em;
+      height: 0.86em;
+    }
+
+    .c100.green .bar, .c100.green .fill {
+      border-color: #4DCBA1 !important;
+    }
+    .c100.green:hover > span {
+      color: #4DCBA1;
+    }
+  </style>
+
+</head>
+
+
+<!-- Interest !-->
+
+<body id="page-top">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Adarsh Sivadas</span>
+    <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/Adarsh_600x600.jpg" alt="">
+      </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#highlights">Highlights</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#connect">Connect</a>
+      </li>
+    </ul>
+  </div>
 </nav>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="images/cover.png" alt = "cover" width="1920" height="1088">
-            <div class="hero-image">
-                <div class="hero-text">
-                    <div class = "typewriter">
-                        <h1>ADARSH SIVADAS</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="container-fluid p-0">
+
+  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+    <div class="w-100">
+      <h1 class="mb-0">Adarsh
+        <span class="text-primary">Sivadas</span>
+      </h1>
+      <div class="subheading mb-5">University at Buffalo · Buffalo, NY ·
+        <a href="mailto:adarshsiv314@gmail.com">adarshsiv314@gmail.com</a>
+      </div>
+      <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
     </div>
-</div>
+  </section>
 
-<!-- Container (ABOUT ME Section) -->
-<div id="about" class="container text-center">
-    <h2 class="text-center" >Hello, World!</h2>
-    <p><em>Who am I?</em></p>
-    <p>
-        Even though I took computer science for a year at my high school, I never started coding until I got to college.
-        At University at Buffalo, I was fascinated by the world of computer science and I immediately found my passion for
-        programming. So when I switched my major from Mechanical Engineering to Computer Science in my freshman year,
-        my parents were the least surprised because ever since I was young, I loved building and breaking. And to me,
-        the basics of programming has always been about building a great product by breaking down multiple concepts. <br><br>
+  <hr class="m-0">
 
-        Apart from programming, I love music and cooking. Music has always found a way to calm, motivate or entertain me.
-        If you are ever on UB campus, you can always spot me with my big headphones on. Cooking has always been a
-        leisure activity for me. I owe a lot of my creative growth to my midnight cravings.<br><br>
+  <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+    <div class="w-100">
+      <h2 class="mb-5">Experience</h2>
 
-        When I am not doing Computer Science, I am either playing snooker, watching hysterical youtube videos, doing some
-        adventurous activity, usually alone or listening to podcasts about the start-ups' world.
-    </p>
-    <br>
-</div>
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="resume-content">
+          <h3 class="mb-0">Google Developer Student Club Lead</h3>
+          <div class="subheading mb-3">Google Developers Group</div>
+          <p>Google Developer Student Club train thousands of university students and work with their communities to solve real-life problems. Through inclusive peer-to-peer meetups and in-person activities, DSC Leads have lasting impact on their community.
+            <br>
+            <br>
+            • Developing Google powered projects , aimed to solve problem faced by local communities and businesses
+            <br>
+            • Promoting awareness about Google educational and technical events to foster engagement from university
+            <br>
+            • Delegating technical workshops, hackathons and info sessions to create a community of student developers on campus
 
-<!-- Container (CONNECT Section) -->
-<div id="connect" class="bg-1">
-    <div class="container">
-        <h3 class="text-center">CONNECT WITH ME</h3>
-        <p class="text-center">Find something interesting about me? Want to help me improve?</p>
-        <div id="services" class="text-center">
-            <div class="row slideanim">
-                <div class="col-sm-4">
-                    <span style="font-size: 48px;">
-                    <i class="fas fa-envelope-square"></i>
-                    </span>
-                    <h4>
-                        <a href="mailto:adarshsi@buffalo.edu">Email</a>
-                    </h4>
-                    <p>Fastest way to connect with me!</p>
-                </div>
-                <div class="col-sm-4">
-                    <span style="font-size: 48px;">
-                    <i class="fab fa-linkedin"></i>
-                    </span>
-                    <h4>
-                        <a href="https://www.linkedin.com/in/adarsh-sivadas-765473172/">Linkedin</a>
-                    </h4>
-                    <p>Let's be professional now, shall we? </p>
-                </div>
-                <div>
-                    <span style="font-size: 48px;">
-                    <i class="fab fa-github-square"></i>
-                    </span>
-                    <h4>
-                        <a href="https://github.com/adarshsi">Github</a>
-                    </h4>
-                    <p>Cool things I do! Cool place to be!</p>
-                </div>
-            </div>
+          </p>
         </div>
+        <div class="resume-date text-md-right">
+          <span class="text-primary">August 2019 - Present</span>
+        </div>
+      </div>
+
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="resume-content">
+          <h3 class="mb-0">Student Assistant</h3>
+          <div class="subheading mb-3">UB Center for Industrial Effectiveness (TCIE)</div>
+          <p>
+            • Designed AI Chatbot for UB TCIE website. Leveraged DialogFlow for AI powered conversation and BotCopy for UI/UX to
+            increase website traffic by 45% and drastically improve website navigation, customer service and engagement.
+
+
+            <br>
+            • Developed Android/iOS mobile app. Leveraged Kotlin/Swift and framework React to develop back-end and application logic.
+            Result was increase in event engagement by 50% and streamlining event coordination.
+
+            <br>
+
+            • Provided technical and testing expertise to UB MOOC platform, UBx. I delegated content management,
+            service oriented system and transaction backend to increase average viewership by 33%.
+
+
+          </p>
+        </div>
+        <div class="resume-date text-md-right">
+          <span class="text-primary">June 2019 - Jan 2020</span>
+        </div>
+      </div>
+
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="resume-content">
+          <h3 class="mb-0">Technical Intern</h3>
+          <div class="subheading mb-3">Motivair Corporation</div>
+          <p>
+            • Converted the CAREL 1tool PLC (Programmable Logic Controllers) programs to C.PCO line of PLC’s using CAREL C.Suites. I systematized logic flow of PLC,
+            leading to a 15% increase in running time while spearheading data cleansing of PLC programs, using .NET, increasing overall efficiency of PLC.
+            <br>
+            • Developed and implemented a data driven quality management system. Assisted consultants with ISO 9001:2015 training.
+          </p>
+        </div>
+        <div class="resume-date text-md-right">
+          <span class="text-primary">June 2019 - August 2019</span>
+        </div>
+      </div>
+
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+        <div class="resume-content">
+          <h3 class="mb-0">Customer Service Associate</h3>
+          <div class="subheading mb-3">Zomato</div>
+          <p>
+            • Organized and implemented the transference of information to/from restaurant and staff.
+            <br>
+            • Established connections with 1000+ people to provide centralized customer service assistance.
+            <br>
+            • Resolved customer inquiries with prompt service. Assisted in promoting and executing a wide variety of promotional sales and marketing plans.
+
+          </p>
+        </div>
+        <div class="resume-date text-md-right">
+          <span class="text-primary">May 2018 - August 2018</span>
+        </div>
+      </div>
+
     </div>
-</div>
 
-<!-- Container (VIDEOS Section) -->
-<div id="videos" class="container text-center">
-    <h2 class="text-center" >Check out my videos!</h2>
-    <p><em>I make videos. Sometimes. </em></p>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X5FRPU_ivaU" allowfullscreen></iframe>
-            </div>
+  </section>
+
+  <hr class="m-0">
+
+  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+    <div class="w-100">
+      <h2 class="mb-5">Education</h2>
+
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="resume-content">
+          <h3 class="mb-0">SUNY University at Buffalo</h3>
+          <div class="subheading mb-3">Bachelor of Science - Computer Science</div>
+
         </div>
-        <div class="col-sm-4">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jykgkHUECRc" allowfullscreen></iframe>
-            </div>
+        <div class="resume-date text-md-right">
+          <span class="text-primary">August 2018 - May 2022</span>
         </div>
+      </div>
+
+
     </div>
+  </section>
+
+  <hr class="m-0">
+
+  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+    <div class="w-100">
+      <h2 class="mb-5">Skills</h2>
+
+      <div class="bg-white rounded p-5 shadow">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+            <div class="card" style="width: 13rem">
+              <div class="card-header text-center" style="background-color: #4DCBA1; color: #373C44">
+                <b>Python</b>
+              </div>
+              <div class="card-body shadow" >
+                <div class="c100 p100 green">
+                  <span>100%</span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 13rem">
+              <div class="card-header text-center" style="background-color: #4DCBA1; color: #373C44">
+                <b>Scala</b>
+              </div>
+              <div class="card-body shadow" >
+                <div class="c100 p95 green">
+                  <span>95%</span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 13rem">
+              <div class="card-header text-center" style="background-color: #4DCBA1; color: #373C44">
+                <b>C / C++</b>
+              </div>
+              <div class="card-body shadow" >
+                <div class="c100 p95 green">
+                  <span>95%</span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <br>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="bg-white rounded p-5 shadow">
+              <h4> OTHER LANGUAGES</h4>
+              <h3 class="progress-title">KOTLIN -- SWIFT</h3>
+              <div class="progress">
+                <div class="progress-bar" style="width:90%; background:#4DCBA1;">
+                  <div class="progress-value">90%</div>
+                </div>
+              </div>
+
+              <h3 class="progress-title">.NET -- GOOGLE CLOUD PLATFORM</h3>
+              <div class="progress">
+                <div class="progress-bar" style="width:90%; background:#4DCBA1;">
+                  <div class="progress-value">90%</div>
+                </div>
+              </div>
+
+              <h3 class="progress-title">REACT -- METEOR</h3>
+              <div class="progress">
+                <div class="progress-bar" style="width:85%; background:#4DCBA1;">
+                  <div class="progress-value">85%</div>
+                </div>
+              </div>
+
+              <h3 class="progress-title">VUE.JS -- NODE.JS</h3>
+              <div class="progress">
+                <div class="progress-bar" style="width:80%; background:#4DCBA1;">
+                  <div class="progress-value">80%</div>
+                </div>
+              </div>
+
+              <h3 class="progress-title">SQL -- MONGODB</h3>
+              <div class="progress">
+                <div class="progress-bar" style="width:75%; background:#4DCBA1;">
+                  <div class="progress-value">75%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="bg-white rounded-lg p-5 shadow">
+              <h4> ESSENTIAL SKILLS </h4>
+
+              <h3 class="progress-title">MANAGEMENT & LEADERSHIP</h3>
+              <div class="progress">
+                <div class="progress-bar" style="width:100%; background:#4DCBA1;">
+                  <div class="progress-value">100%</div>
+                </div>
+              </div>
+
+              <h3 class="progress-title">CRITICAL THINKING</h3>
+              <div class="progress">
+                <div class="progress-bar" style="width:100%; background:#4DCBA1;">
+                  <div class="progress-value">100%</div>
+                </div>
+              </div>
+
+              <h3 class="progress-title">SUCCESS ORIENTED</h3>
+              <div class="progress">
+                <div class="progress-bar" style="width:90%; background:#4DCBA1;">
+                  <div class="progress-value">90%</div>
+                </div>
+              </div>
+
+              <h3 class="progress-title">TROUBLESHOOTING</h3>
+              <div class="progress">
+                <div class="progress-bar" style="width:80%; background:#4DCBA1;">
+                  <div class="progress-value">80%</div>
+                </div>
+              </div>
+
+              <h3 class="progress-title">FLEXIBILITY</h3>
+              <div class="progress">
+                <div class="progress-bar" style="width:80%; background:#4DCBA1;">
+                  <div class="progress-value">80%</div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <hr class="m-0">
+
+  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="highlights">
+    <div class="w-100">
+      <h2 class="mb-5">HIGHLIGHTS</h2>
+
+      <h3 class="mb-0">Major highlights so far!</h3>
+      <p>And moments that make sense.</p>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/DSC_Summit_19.jpeg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block text-blo">
+              <p><b>DSC Lead Summit</b><br>
+              Google HQ, California, USA | 2019</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/Golden_CA.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p><b>Golden Gate Bridge</b><br>
+                San Fransico, California, USA | 2019 </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/3D_Printer.png" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p><b>3D Printer that later burned and died</b><br>
+                Delhi, India | 2015 </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/GD_Adarsh.png" alt="Fourth slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p style="background-color: rgba(77, 203, 161, 0.6)"><b>Google MP1</b><br>
+                Sunnyvale, California, USA | 2019 </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/IM_NY.jpg" alt="Fifth slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p><b>Intrepid Sea, Air & Space Museum</b><br>
+                Manhattan, New York, USA | 2018 </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/DSC_Leads.png" alt="Sixth slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p style="background-color: rgba(77, 203, 161, 0.6)"><b>Summit with 300+ DSC Leads</b><br>
+                Sunnyvale, California, USA | 2019 </p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <hr class="m-0">
+
+  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="connect">
+    <div id = "soc">
+      <h2 class="mb-5">Connect</h2>
+      <h3 class="mb-0">To Talk, Socialize and Solve together!</h3>
+      <p>Let's make it happen.</p>
+      <br>
+      <br>
+      <br>
+      <ul>
+        <li><a href="https://www.facebook.com/adarsh.sivadas"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/adarshsi"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li id = "linkedin"><a href="https://www.linkedin.com/in/adarshsivadas/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li id = "insta"><a href="https://www.instagram.com/adarshsiv/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
 </div>
 
-<!-- Footer -->
-<footer class="text-center">
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-        <span style="font-size: 20px;">
-            <i class="fas fa-undo"></i>
-        </span>
-    </a><br><br>
-    <p>Disclaimer: Copyright infringement of any kind is not intended.</p>
-</footer>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<script>
-    $(document).ready(function(){
-        // Initialize Tooltip
-        $('[data-toggle="tooltip"]').tooltip();
-
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 900, function(){
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    })
-</script>
+<!-- Custom scripts for this template -->
+<script src="js/resume.min.js"></script>
 
 </body>
+
 </html>
