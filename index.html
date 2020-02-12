@@ -353,10 +353,51 @@
       color: #4DCBA1;
     }
   </style>
+</head>
 
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+
+    /* Remove extra left and right margins, due to padding */
+    .row1 {margin: 0 -5px;}
+
+    /* Clear floats after the columns */
+    .row1:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 16px;
+    }
+  </style>
 </head>
 
 
+<body>
 <!-- Interest !-->
 
 <body id="page-top">
@@ -511,61 +552,73 @@
     <div class="w-100">
       <h2 class="mb-5">Skills</h2>
 
-      <div class="bg-white rounded p-5 shadow">
-        <div class="container">
-          <div class="row">
-            <div class="col">
+      <div class="container">
+        <div class="row1">
 
-              <div class="card" style="width: 13rem">
-                <div class="card-header text-center" style="background-color: #4DCBA1; color: #373C44">
-                  <b class="progress-title">Python</b>
-                </div>
-                <div class="card-body shadow" >
-                  <div class="c100 p100 green">
-                    <span>100%</span>
-                    <div class="slice">
-                      <div class="bar"></div>
-                      <div class="fill"></div>
-                    </div>
-                  </div>
-                </div>
+          <div class="column">
+            <div class="card" style="align-content: center; position: static">
+              <div class="card-header text-center" style="background-color: #4DCBA1; color: #373C44">
+                <b class="progress-title">Python</b>
               </div>
-            </div>
-
-            <div class="col">
-              <div class="card" style="width: 13rem">
-                <div class="card-header text-center" style="background-color: #4DCBA1; color: #373C44">
-                  <b>Scala</b>
-                </div>
-                <div class="card-body shadow" >
-                  <div class="c100 p95 green">
-                    <span>95%</span>
-                    <div class="slice">
-                      <div class="bar"></div>
-                      <div class="fill"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card" style="width: 13rem">
-                <div class="card-header text-center" style="background-color: #4DCBA1; color: #373C44">
-                  <b>C / C++</b>
-                </div>
-                <div class="card-body shadow" >
-                  <div class="c100 p95 green">
-                    <span>95%</span>
-                    <div class="slice">
-                      <div class="bar"></div>
-                      <div class="fill"></div>
-                    </div>
-                  </div>
+              <br>
+              <div class="c100 p100 green align-self-center">
+                <span>100%</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="column">
+            <div class="card" style="align-content: center; position: static">
+              <div class="card-header text-center" style="background-color: #4DCBA1; color: #373C44">
+                <b class="progress-title">Scala</b>
+              </div>
+              <br>
+              <div class="c100 p95 green align-self-center">
+                <span>95%</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card" style="align-content: center; position: static">
+              <div class="card-header text-center" style="background-color: #4DCBA1; color: #373C44">
+                <b class="progress-title">C++ // C</b>
+              </div>
+              <br>
+              <div class="c100 p95 green align-self-center">
+                <span>95%</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card" style="align-content: center; position: static">
+              <div class="card-header text-center" style="background-color: #4DCBA1; color: #373C44">
+                <b class="progress-title">Leadership</b>
+              </div>
+              <br>
+              <div class="c100 p100 green align-self-center">
+                <span>100%</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -618,7 +671,7 @@
             <div class="bg-white rounded-lg p-5 shadow">
               <h4> ESSENTIAL SKILLS </h4>
 
-              <p class="progress-title" style="font-size: small">MANAGEMENT & LEADERSHIP</p>
+              <p class="progress-title" style="font-size: small">MANAGEMENT SKILLS</p>
               <div class="progress">
                 <div class="progress-bar" style="width:100%; background:#4DCBA1;">
                   <div class="progress-value">100%</div>
