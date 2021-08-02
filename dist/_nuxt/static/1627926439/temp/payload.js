@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/temp", {data:[{}],fetch:{},mutations:void 0});
